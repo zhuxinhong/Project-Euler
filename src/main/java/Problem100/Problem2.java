@@ -5,6 +5,7 @@ package Problem100;
  */
 public class Problem2 {
 
+    //answer: 4613732
     public static void main(String[] args) {
 
         int sum = 0;
