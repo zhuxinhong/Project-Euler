@@ -17,8 +17,10 @@ public class Problem3 {
             long remainder = value % i;
             if (remainder == 0) {
                 long vv = value / i;
-                if (isPrime(vv)){
+                if (isPrime(vv) && !isPrime(i)){
                     return vv;
+                }else if(isPrime(vv) && isPrime(i)){
+                    return vv > i ? vv : i;
                 }else{
                     return getPrime(vv);
                 }
